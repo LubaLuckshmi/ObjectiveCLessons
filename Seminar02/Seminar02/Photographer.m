@@ -88,7 +88,7 @@
             break;
     }
     CGFloat total = _startNumberOfPhoto * k;
-    NSLog(@"%f", total);
+//    NSLog(@"%f", total);
     return total;
 }
 

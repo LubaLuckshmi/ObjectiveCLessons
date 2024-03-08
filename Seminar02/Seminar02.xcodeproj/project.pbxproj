@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84C099042B985E7900DA9509 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C099032B985E7900DA9509 /* main.m */; };
 		84C0990C2B9994BC00DA9509 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0990B2B9875CB00DA9509 /* Photographer.m */; };
+		84C0992E2B9A035000DA9509 /* Trainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0992D2B9A035000DA9509 /* Trainer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		84C099032B985E7900DA9509 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84C0990A2B98758500DA9509 /* Photographer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Photographer.h; sourceTree = "<group>"; };
 		84C0990B2B9875CB00DA9509 /* Photographer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
+		84C0992C2B9A035000DA9509 /* Trainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trainer.h; sourceTree = "<group>"; };
+		84C0992D2B9A035000DA9509 /* Trainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				84C099032B985E7900DA9509 /* main.m */,
 				84C0990A2B98758500DA9509 /* Photographer.h */,
 				84C0990B2B9875CB00DA9509 /* Photographer.m */,
+				84C0992C2B9A035000DA9509 /* Trainer.h */,
+				84C0992D2B9A035000DA9509 /* Trainer.m */,
 			);
 			path = Seminar02;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C0992E2B9A035000DA9509 /* Trainer.m in Sources */,
 				84C0990C2B9994BC00DA9509 /* Photographer.m in Sources */,
 				84C099042B985E7900DA9509 /* main.m in Sources */,
 			);
