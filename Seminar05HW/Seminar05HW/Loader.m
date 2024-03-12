@@ -1,8 +1,8 @@
 //
 //  Loader.m
-//  Seminar05
+//  Seminar05HW
 //
-//  Created by Admin on 11.03.2024.
+//  Created by Admin on 12.03.2024.
 //
 
 #import "Loader.h"
@@ -18,7 +18,7 @@
     return _session;
 }
 
-- (void)performGetRequestFromUrl:(NSString *)stringUrl 
+- (void)performGetRequestFromUrl:(NSString *)stringUrl
                       argruments:(NSDictionary *)arguments
                        completion:(void (^)(NSDictionary *, NSError *))completion {
     NSURLComponents *urlComponents = [NSURLComponents componentsWithString:stringUrl];

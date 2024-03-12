@@ -1,33 +1,32 @@
 //
 //  ViewController.m
-//  Seminar05
+//  Seminar05HW
 //
-//  Created by Admin on 11.03.2024.
+//  Created by Admin on 12.03.2024.
 //
 
 #import "ViewController.h"
 #import "SecondViewController.h"
 
 @implementation ViewController
-//
-//- (void)viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
-//    [self performLoadingWithGetRequest];
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.loader = [Loader new];
     self.view.backgroundColor = [UIColor blueColor];
     
-    self.textView = [[UITextView  alloc] init];
+    self.textView = [[UITextView alloc] initWithFrame:self.view.bounds];
     self.textView.translatesAutoresizingMaskIntoConstraints = NO;
     self.textView.backgroundColor = [UIColor whiteColor];
     
-    [self.navigationController.navigationBar setHidden:NO];
+    UIButton *nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.nextButton.translatesAutoresizingMaskIntoConstraints = NO;
+    [nextButton setTitle:@"Next" forState:UIControlStateNormal];
+    [nextButton setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [nextButton addTarget:self action:@selector(nextButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     
-    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(nextButtonTapped)];
-    self.navigationItem.rightBarButtonItem = nextButton;
+  
+    self.nextButton = nextButton;
     
     [self setupView];
     [self setupConstraints];
@@ -37,6 +36,7 @@
 
 - (void)setupView {
     [self.view addSubview:self.textView];
+    [self.view addSubview:self.nextButton];
 }
 
 - (void)setupConstraints {
@@ -45,6 +45,11 @@
         [self.textView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor],
         [self.textView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor multiplier:0.5],
         [self.textView.heightAnchor constraintEqualToAnchor:self.view.heightAnchor multiplier:0.5],
+        
+        [self.nextButton.topAnchor constraintEqualToAnchor:self.textView.bottomAnchor constant:20],
+//        [self.nextButton.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
+        [self.nextButton.widthAnchor constraintEqualToConstant:100],
+//        [self.nextButton.heightAnchor constraintEqualToConstant:50]
     ]];
 }
 - (void)performLoadingWithGetRequest {

@@ -1,8 +1,8 @@
 //
 //  Loader.h
-//  Seminar05
+//  Seminar05HW
 //
-//  Created by Admin on 11.03.2024.
+//  Created by Admin on 12.03.2024.
 //
 
 #import <Foundation/Foundation.h>
